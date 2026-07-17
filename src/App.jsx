@@ -31,7 +31,7 @@ function HomePage() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ominous-fishstick">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/case/herbal-mask" element={<Case3Page />} />
