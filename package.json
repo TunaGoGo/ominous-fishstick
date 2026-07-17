@@ -1,6 +1,7 @@
 {
   "name": "codespaces-react",
   "version": "0.1.0",
+  "homepage": "https://tunagogo.github.io/ominous-fishstick",
   "private": true,
   "type": "module",
   "dependencies": {
@@ -23,6 +24,8 @@
   "scripts": {
     "start": "BROWSER=none WDS_SOCKET_PORT=0 vite --port 3000",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview",
     "test": "vitest"
   },
@@ -47,6 +50,7 @@
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",
     "@vitejs/plugin-react": "^6.0.1",
+    "gh-pages": "^6.3.0",
     "jsdom": "^26.1.0",
     "tailwindcss": "^4.3.3",
     "vite": "^8.0.16",
